@@ -1,6 +1,5 @@
 package com.example.android.dollar.Activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -16,8 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.android.dollar.Fragments.BankFragment;
-import com.example.android.dollar.Fragments.ChatFragment;
+import com.example.android.dollar.Fragments.BankPricesFragment;
+import com.example.android.dollar.Fragments.BestPricesFragment;
 import com.example.android.dollar.Fragments.GoldFragment;
 import com.example.android.dollar.R;
 import com.example.android.dollar.Utilities;
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.replace(R.id.content_main,new BankFragment()).commit();
+        mFragmentTransaction.replace(R.id.content_main,new BankPricesFragment()).commit();
 
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this,drawer, toolbar,R.string.app_name,
@@ -113,14 +112,26 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_bank) {
 
-            BankFragment bankFragment = new BankFragment();
+            BankPricesFragment bankFragment = new BankPricesFragment();
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.content_main,
                     bankFragment,
                     bankFragment.getTag())
                     .commit();
             // Handle the camera action
-        } else if (id == R.id.nav_gold) {
+        }
+
+        else if (id == R.id.nav_bestBrise) {
+
+            BestPricesFragment goldFragment = new BestPricesFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content_main,
+                    goldFragment,
+                    goldFragment.getTag())
+                    .commit();
+
+        }
+        else if (id == R.id.nav_gold) {
 
             GoldFragment goldFragment = new GoldFragment();
             FragmentManager manager = getSupportFragmentManager();

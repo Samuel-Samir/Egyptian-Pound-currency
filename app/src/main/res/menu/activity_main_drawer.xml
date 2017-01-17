@@ -7,9 +7,18 @@
             android:icon="@drawable/bank"
             android:title="@string/bank" />
         <item
+            android:id="@+id/nav_bestBrise"
+            android:icon="@drawable/bestprice"
+            android:title="@string/bestPrices" />
+        <item
             android:id="@+id/nav_gold"
             android:icon="@drawable/gold"
             android:title="@string/gold" />
+        <item
+            android:id="@+id/nav_connectUs"
+            android:icon="@drawable/connect"
+            android:title="@string/connectToUs" />
+
         <item
             android:id="@+id/nav_help"
             android:icon="@drawable/help"

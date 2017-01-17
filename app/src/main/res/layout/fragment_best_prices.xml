@@ -12,16 +12,18 @@
         card_view:cardCornerRadius="@dimen/cardCornerRadius_dimens"
         android:layout_margin="@dimen/_16dp"
 
+
         xmlns:android="http://schemas.android.com/apk/res/android">
 
         <TextView
             android:layout_width="match_parent"
-            android:background="#f1faf2"
             android:layout_height="wrap_content"
             android:text="ملخص سعر العملة هيفيدك انك توصل لي البنك اللي يشتري منك بي اعلي سعر و بي البنك اللي يبعلك بي اقل سعر"
             android:textColor="@color/black"
             android:layout_margin="@dimen/_8dp"
             android:textSize="@dimen/textSize_dimens"
+            android:background="#f1faf2"
+
             />
 
 
