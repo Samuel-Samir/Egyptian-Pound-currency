@@ -1,0 +1,35 @@
+<resources>
+    <string name="account_setup_imap" translatable="false">IMAP</string>
+    <string name="app_name">الجنيةVSالعملة</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    ////////////////////////////////////////////////////////////////
+    <string name="action_settings">الاعدادات</string>
+    <string name="bank">البنوك</string>
+    <string name="gold">الذهب</string>
+    <string name="converter">محول  العمله </string>
+    <string name="chat">محادثة</string>
+    <string name="bestPrices">أفضل سعر</string>
+    <string-array name="viewOrder">
+        <item>سعر الشراء تنازلي</item>
+        <item>سعر البيع تنازلي</item>
+        <item>سعر الشراء تصاعدي</item>
+        <item>سعر البيع تصاعدي</item>
+
+    </string-array>
+    <string name="uriFetchCurrencies">http://www.theincredible-inc.com/currencies/api/getCurrencies.php </string>
+    <string name="getPricesURL">http://www.theincredible-inc.com/currencies/api/getPrices.php</string>
+    <string name="getGoldPricesURL">http://www.theincredible-inc.com/currencies/api/getGoldPrices.php</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_intro">عن البرنامج</string>
+    <string name="sher_app">شارك البرنامج</string>
+    <string name="connection_fild">تعذر الاتصال بالانترنت</string>
+    <string name="dailog_mass1">برجاء الاتصال بي  الانترنت للحصول علي البيانات في الوقت الحقيقي</string>
+    <string name="dailog_mass2">او يمكنك استخدام البرنامج باخر البيانات المخزنة فيه بلضغط علي متابعة</string>
+    <string name="cancel">إلغاء</string>
+    <string name="contin">متابعة</string>
+</resources>

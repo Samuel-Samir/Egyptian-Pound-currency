@@ -1,0 +1,64 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="@dimen/cardCornerRadius_dimens"
+    android:layout_marginTop="@dimen/_8dp"
+    android:layout_marginLeft="@dimen/_16dp"
+    android:layout_marginRight="@dimen/_16dp"
+    android:layout_marginBottom="@dimen/_8dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <ImageView
+            android:layout_width="@dimen/icon_dimens"
+            android:layout_height="@dimen/icon_dimens"
+            android:src="@drawable/goldthumb"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gold_tybe"
+            android:layout_centerVertical="true"
+            android:text="عيار 24"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_dimens"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_80dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gold_brce"
+            android:layout_centerVertical="true"
+            android:text="6521 جنيه"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_dimens"
+            android:layout_marginLeft="@dimen/icon_dimens"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/update"
+            android:layout_below="@+id/gold_tybe"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_80dp"
+            android:layout_marginTop="@dimen/_16dp"
+            />
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

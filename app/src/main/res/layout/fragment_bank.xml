@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.android.dollar.Fragments.BankFragment"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@color/black"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.design.widget.TabLayout>
+
+<android.support.v4.view.ViewPager
+android:id="@+id/viewpager"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+</android.support.v4.view.ViewPager>
+
+    </LinearLayout>

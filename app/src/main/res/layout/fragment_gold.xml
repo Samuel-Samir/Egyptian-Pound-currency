@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.dollar.Fragments.GoldFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius_dimens"
+        android:layout_margin="@dimen/_16dp"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="متوسط سعر الذهب اليوم في الاسواق المصرية غير شامل مصنعية الذهب"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_dimens"
+
+            />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الوحدة"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_dimens"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_80dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سعر البيع"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_dimens"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/icon_dimens"
+            />
+
+
+    </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/GridViewLayout"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+
+>
+
+
+
+
+</LinearLayout>

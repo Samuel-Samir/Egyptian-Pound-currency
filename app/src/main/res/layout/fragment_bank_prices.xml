@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.dollar.Fragments.BankPricesFragment"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius_dimens">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4dp"
+            >
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/orde_Spinner"
+                android:padding="@dimen/_4dp"
+
+
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currency_Spinner"
+                android:layout_alignParentRight="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/currency_Spinner"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/generalUpdate"
+                android:layout_marginTop="@dimen/_16dp"
+                android:textColor="@color/colorPrimary"
+
+
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius_dimens"
+        android:layout_marginTop="@dimen/_4dp"
+        >
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_4dp"
+
+            >
+
+            <TextView
+                android:layout_width="@dimen/icon_dimens"
+                android:layout_height="@dimen/icon_dimens"
+                android:text="البيع"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/_20dp"
+                />
+            <ImageView
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:id="@+id/sell_arrow"
+                />
+
+            <TextView
+                android:layout_width="@dimen/icon_dimens"
+                android:layout_height="@dimen/icon_dimens"
+                android:text="الشراء"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/textView3"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/icon_dimens"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_centerVertical="true"
+                android:id="@+id/buy_arrow"
+                />
+
+
+            <TextView
+                android:layout_width="@dimen/icon_dimens"
+                android:layout_height="@dimen/icon_dimens"
+                android:text="الـبـنـك"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/textView4"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="75dp"
+                android:layout_centerVertical="true"
+
+                />
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/GridViewLayout"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+</LinearLayout>
