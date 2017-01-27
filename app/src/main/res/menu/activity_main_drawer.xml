@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_bank"
             android:icon="@drawable/bank"
@@ -14,6 +15,10 @@
             android:id="@+id/nav_gold"
             android:icon="@drawable/gold"
             android:title="@string/gold" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/chat"
+            android:title="@string/chat" />
         <item
             android:id="@+id/nav_connectUs"
             android:icon="@drawable/connect"

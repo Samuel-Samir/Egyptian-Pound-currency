@@ -1,7 +1,9 @@
 package com.example.android.dollar.Activities;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -17,6 +19,7 @@ import android.view.View;
 
 import com.example.android.dollar.Fragments.BankPricesFragment;
 import com.example.android.dollar.Fragments.BestPricesFragment;
+import com.example.android.dollar.Fragments.ChatFragment;
 import com.example.android.dollar.Fragments.GoldFragment;
 import com.example.android.dollar.R;
 import com.example.android.dollar.Utilities;
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionbar = getActionBar();
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -123,22 +127,54 @@ public class MainActivity extends AppCompatActivity
 
         else if (id == R.id.nav_bestBrise) {
 
-            BestPricesFragment goldFragment = new BestPricesFragment();
+            BestPricesFragment bestBriseFragment = new BestPricesFragment();
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.content_main,
-                    goldFragment,
-                    goldFragment.getTag())
+                    bestBriseFragment,
+                    bestBriseFragment.getTag())
                     .commit();
 
         }
         else if (id == R.id.nav_gold) {
 
-            GoldFragment goldFragment = new GoldFragment();
-            FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.content_main,
-                    goldFragment,
-                    goldFragment.getTag())
-                    .commit();
+
+            if (Utilities.checkInternetConnection(this)) {
+
+                GoldFragment goldFragment = new GoldFragment();
+                FragmentManager manager = getSupportFragmentManager();
+                manager.beginTransaction().replace(R.id.content_main,
+                        goldFragment,
+                        goldFragment.getTag())
+                        .commit();
+
+            }
+        }
+
+        else if (id == R.id.nav_chat) {
+
+
+            if (Utilities.checkInternetConnection(this)) {
+
+                ChatFragment chatFragment = new ChatFragment();
+                FragmentManager manager = getSupportFragmentManager();
+                manager.beginTransaction().replace(R.id.content_main,
+                        chatFragment,
+                        chatFragment.getTag())
+                        .commit();
+
+            }
+        }
+
+        else if (id == R.id.nav_connectUs) {
+
+            Intent intent = new Intent(Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{getResources().getString(R.string.developerEmail)} );
+            intent.putExtra(Intent.EXTRA_TEXT   , "ارسل لنا كل اقتراحكم");
+            intent.putExtra(Intent.EXTRA_SUBJECT,getResources().getString(R.string.app_name)+"ملاحظات " );
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
 
         }
 

@@ -21,11 +21,12 @@ public class IntroductionActivity extends AppIntro {
         int background = getResources().getColor(R.color.colorPrimary);
         int white = getResources().getColor(R.color.white);
 
-        addSlide(AppIntroFragment.newInstance("البنوك", "كل البنوك وسعر الشراء  والبيع ", R.drawable.s1, background));
-        addSlide(AppIntroFragment.newInstance("أفضل سعر  يقدمه  البنك", "اقل  واعلي  سعر لي شراء  العملة", R.drawable.s5, background));
-        addSlide(AppIntroFragment.newInstance("محتوي البرنامج", "اسعار  العملات  في البنوك  والدهب  والمحادثة", R.drawable.s2, background));
-        addSlide(AppIntroFragment.newInstance("معلومات  عن  البنك", "انت ودماغك  عاوز تكلمو تزرو  علي الموقع  بتاعو متقرفناش", R.drawable.s3, background));
-        addSlide(AppIntroFragment.newInstance("اسعار الذهب", "اسعار كل فئات  الذهب", R.drawable.s4, background));
+        addSlide(AppIntroFragment.newInstance("محتوي البرنامج", "اسعار العملات المختلفة في البنوك وافضل سعر البيع والشراء،اسعار الذهب  والمحادثات ", R.drawable.s1, background));
+        addSlide(AppIntroFragment.newInstance("البنوك", "اسعار العملات في مختلف البنوك ", R.drawable.s2, background));
+        addSlide(AppIntroFragment.newInstance(" تفاصيل  البنك", "يظهر لك كل  معلومات  البنك  ويمكنك  الاتصال  او  حتي  ان  تزور  موقعة", R.drawable.s3, background));
+        addSlide(AppIntroFragment.newInstance("أفضل سعر  يقدمه  البنك", "اقل  واعلي  سعر لي شراء  العملة", R.drawable.s4, background));
+        addSlide(AppIntroFragment.newInstance("اسعار الذهب", "اسعار كل فئات  الذهب", R.drawable.s5, background));
+        addSlide(AppIntroFragment.newInstance("المحادثة", "يمكنك  تبادل  الاسئلة  عبر  محادثة جماعية  ", R.drawable.s6, background));
 
 
         setBarColor(background);

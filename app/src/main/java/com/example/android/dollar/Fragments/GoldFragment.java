@@ -49,8 +49,10 @@ public class GoldFragment extends Fragment {
         goldPriceRecyclerView = (RecyclerView) rootView.findViewById(R.id.GridViewLayout);
         goldPriceRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(),1 ));
 
-        if(Utilities.checkInternetConnection(getActivity()))
+        if(Utilities.checkInternetConnection(getActivity())) {
             new GetGoldPricesTask().execute();
+        }
+
 
         return  rootView ;
     }
@@ -134,6 +136,7 @@ public class GoldFragment extends Fragment {
                 dialog.dismiss();
             }
 
-        }    }
+        }
+    }
 
 }

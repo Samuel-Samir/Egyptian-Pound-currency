@@ -62,15 +62,18 @@ public class BankPricesAdapter  extends  RecyclerView.Adapter<BankPricesAdapter.
         holder.buyTextView.setText(bankPrice.buy_price);
         holder.bankIcon.setImageDrawable(myActivity.getResources().getDrawable(myActivity.getResources().getIdentifier("b" +bankPrice.bank_id , "drawable", myActivity.getPackageName())));
 
+        if(Utilities.checkInternetConnection(myActivity))
+        {
 
-        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Utilities.selectedBankPriceInfo = bankPriceList.get(position);
-                Intent intent = new Intent(myActivity , PopActivity.class);
-                myActivity.startActivity(intent);
+            holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Utilities.selectedBankPriceInfo = bankPriceList.get(position);
+                    Intent intent = new Intent(myActivity, PopActivity.class);
+                    myActivity.startActivity(intent);
 
-            }
-        });
+                }
+            });
+        }
 
     }
 

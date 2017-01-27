@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">32dp</dimen>
+    <dimen name="nav_header_height">250dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+    <dimen name="fab_margin">32dp</dimen>
+    <dimen name="icon_dimens">100dp</dimen>
+    <dimen name="cardCornerRadius_dimens">4dp</dimen>
+    <dimen name="textSize_dimens">32dp</dimen>
+
+    <dimen name="_4dp">8dp</dimen>
+    <dimen name="_8dp">32dp</dimen>
+    <dimen name="_16dp">32dp</dimen>
+    <dimen name="_12dp">24dp</dimen>
+    <dimen name="_20dp">40dp</dimen>
+    <dimen name="_80dp">150dp</dimen>
+    <dimen name="_36dp">70dp</dimen>
+
+    <dimen name="design_navigation_icon_size" tools:override="true">40dp</dimen>
+    <dimen name="navWidth">375dp</dimen>
+    <dimen name="actionparSize">100dp</dimen>
+
+
+</resources>

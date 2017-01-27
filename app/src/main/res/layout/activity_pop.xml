@@ -202,9 +202,11 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/textSize_dimens"
                     android:textColor="@color/black"
                     android:id="@+id/pop_dollerTextView"
+                    android:textSize="@dimen/_12dp"
+                    android:paddingTop="@dimen/_4dp"
+                    android:paddingBottom="@dimen/_4dp"
                     />
             </LinearLayout>
 

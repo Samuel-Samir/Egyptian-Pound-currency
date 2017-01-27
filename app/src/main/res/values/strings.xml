@@ -1,6 +1,6 @@
 <resources>
     <string name="account_setup_imap" translatable="false">IMAP</string>
-    <string name="app_name">الجنية و العملة</string>
+    <string name="app_name">أسعار العملات</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -10,7 +10,6 @@
     <string name="gold">الذهب</string>
     <string name="connectToUs">تواصل معنا</string>
 
-    <string name="converter">محول  العمله </string>
     <string name="chat">محادثة</string>
     <string name="bestPrices">أفضل سعر</string>
     <string-array name="viewOrder">
@@ -29,11 +28,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="app_intro">عن البرنامج</string>
     <string name="sher_app">شارك البرنامج</string>
-    <string name="connection_fild">تعذر الاتصال بالانترنت</string>
+    <string name="connection_fild">تعذر الاتصال بلانترنت</string>
     <string name="dailog_mass1">برجاء الاتصال بي  الانترنت للحصول علي البيانات في الوقت الحقيقي</string>
     <string name="dailog_mass2">او يمكنك استخدام البرنامج باخر البيانات المخزنة فيه بلضغط علي متابعة</string>
     <string name="cancel">إلغاء</string>
     <string name="contin">متابعة</string>
-    <string name="email">Developer Email</string>
-    <string name="developerEmail">samuelsamer952@gmail.com</string>
+    <string name="developerEmail">samuelsamir1194@gmail.com</string>
+    <string name="send_button_label">إرسال</string>
+
 </resources>

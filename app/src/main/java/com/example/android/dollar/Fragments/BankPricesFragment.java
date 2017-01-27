@@ -153,7 +153,7 @@ public class BankPricesFragment extends Fragment  {
     public  void  findOrserSpnner (View rootView)
     {
         String [] spannerOrder = getResources().getStringArray(R.array.viewOrder);
-        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, spannerOrder); //selected item will look like a spinner set from XML
+        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(getActivity(), R.layout.custom_simplespiner_item, spannerOrder); //selected item will look like a spinner set from XML
         spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerOrder.setAdapter(spinnerArrayAdapter);
         spinnerOrder.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

@@ -186,19 +186,7 @@ public class Utilities {
     }
 
 
-    /*public  static void goldWriteFile(ArrayList<GoldPrice> GoldPrice)throws IOException {
 
-        String fileName ="currencyText.txt";
-        File dir = new File(fillDirPath);
-        if(!dir.exists())
-            dir.mkdirs();
-        File file = new File(fillDirPath, fileName);
-        FileOutputStream fileOutputStream = new FileOutputStream(file);
-        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        objectOutputStream.writeObject(GoldPrice);
-        objectOutputStream.close();
-
-    }*/
 
     //********************************************************************************//
 
@@ -211,7 +199,10 @@ public class Utilities {
         File file = new File(fillDirPath, fileName);
         FileInputStream fileInputStream = new FileInputStream(file);
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+        if (objectInputStream!=null)
         Utilities.bankPriceCurrencyList = ( ArrayList<BankPriceInfo> ) objectInputStream.readObject();
+        else
+        Utilities.bankPriceCurrencyList = new ArrayList<>();
 
         objectInputStream.close();
 
@@ -226,27 +217,16 @@ public class Utilities {
         File file = new File(fillDirPath, fileName);
         FileInputStream fileInputStream = new FileInputStream(file);
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+        if(objectInputStream!=null)
         Utilities.selectedCurrencies = ( Currencies ) objectInputStream.readObject();
+        else
+            Utilities.selectedCurrencies = new Currencies();
+
 
         objectInputStream.close();
 
     }
 
-/*
-    public  static void goldReadFile() throws IOException, ClassNotFoundException {
-
-        String fileName ="currencyText.txt";
-        File dir = new File(fillDirPath);
-        if(!dir.exists())
-            dir.mkdirs();
-        File file = new File(fillDirPath, fileName);
-        FileInputStream fileInputStream = new FileInputStream(file);
-        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-        Utilities.goldPricesList = ( ArrayList<GoldPrice> ) objectInputStream.readObject();
-        objectInputStream.close();
-
-    }
-*/
 
 
     public static String decode (String str, String str2) {
